@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+/* Background dengan overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(img/gambar1.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Container utama */
+.container-satu {
+    display: flex;
+    margin: 100px;
+    gap: 50px;
+    align-items: flex;
+}
+
+/* Style umum untuk semua box */
+.container-satu > div {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    min-height: 400px;
+}
+
+.container-satu > div:hover {
+    transform: scale(1.03);
+}
+
+/* Sidebar kiri */
+.sidebar-satu {
+    flex: 1;
+    background: linear-gradient(135deg, #dff6ff, #bde0fe);
+    order: 1;
+    margin-top: 40px;
+}
+
+/* Artikel utama */
+.kolom-utama {
+    flex: 2;
+    background: #f6f1e4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    order: 2;
+    margin-top: 40px; 
+}
+
+/* Sidebar kanan */
+.sidebar-dua {
+    flex: 1;
+    background: linear-gradient(135deg, #ffe0f0, #ffc8dd);
+    order: 3;
+    margin-top: 40px;
+}
+
+.sidebar-dua h3 {
+    background: linear-gradient(to right, #30c5df4d, #b15e8f86);
+    margin-top: 0;
+    border-radius: 7px;
+    text-align: center;
+}
+.sidebar-dua p {
+    text-align: justify;
+    line-height: 1;
+}
+
+/* Judul artikel dengan gradasi */
+.kolom-utama h2 {
+    background: linear-gradient(to right, #f78ea749, #de957ca1);
+    margin-top: 0;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.sidebar-satu h3 {
+    background: linear-gradient(to right, #b15e8f86, #30c5df4d);
+    margin-top: 0;
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* Styling link sidebar */
+.sidebar-satu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-satu li {
+    margin: 8px 0;
+}
+
+.sidebar-satu a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.sidebar-satu a:hover {
+    color: #ff6f91;
+    transform: translateX(5px);
+}
+
+/* Tambah styling gambar di artikel (opsional) */
+.kolom-utama img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
