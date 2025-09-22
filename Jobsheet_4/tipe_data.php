@@ -33,6 +33,8 @@ var_dump($apakahSiswaLulus);
 echo "<br>";
 var_dump($apakahSiswaSudahUjian);
 
+echo "<br>";
+
 $namaDepan = "Ibnu";
 $namaBelakang = 'Jakaria';
 
