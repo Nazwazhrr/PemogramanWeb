@@ -45,4 +45,18 @@ echo "Hasil AND: {$hasilAnd} <br>";
 echo "Hasil OR: {$hasilOr} <br>";
 echo "Hasil NOT A: {$hasilNotA} <br>";
 echo "Hasil NOT B: {$hasilNotB} <br>";
+echo "<br>";
+
+echo "Nilai a: {$a} <br>";
+echo "Nilai b: {$b} <br><br>";
+$a += $b;
+echo "Setelah a += b, nilai a: $a <br>";
+$a -= $b;
+echo "Setelah a -= b, nilai a: $a <br>";
+$a *= $b;
+echo "Setelah a *= b, nilai a: $a <br>";
+$a /= $b;
+echo "Setelah a /= b, nilai a: $a <br>";
+$a %= $b;
+echo "Setelah a %= b, nilai a: $a <br><br>";
 ?>
