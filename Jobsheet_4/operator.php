@@ -59,4 +59,13 @@ $a /= $b;
 echo "Setelah a /= b, nilai a: $a <br>";
 $a %= $b;
 echo "Setelah a %= b, nilai a: $a <br><br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "Nilai a: {$a} <br>";
+echo "Nilai b: {$b} <br><br>";
+
+echo "Apakah a identik dengan b (===)? " . ($hasilIdentik ? 'true' : 'false') . "<br>";
+echo "Apakah a tidak identik dengan b (!==)? " . ($hasilTidakIdentik ? 'true' : 'false') . "<br><br>";
 ?>
