@@ -68,4 +68,13 @@ echo "Nilai b: {$b} <br><br>";
 
 echo "Apakah a identik dengan b (===)? " . ($hasilIdentik ? 'true' : 'false') . "<br>";
 echo "Apakah a tidak identik dengan b (!==)? " . ($hasilTidakIdentik ? 'true' : 'false') . "<br><br>";
+
+$totalKursi = 45;
+$kursiTerisi = 28;
+
+$persenKursiKosong = (45-28)/45 * 100;
+
+echo"Total Kursi Resto = $totalKursi<br>";
+echo"Kursi yang terisi pada suatu malam = $kursiTerisi<br>";
+echo"Persen Kursi yang masih kosong $persenKursiKosong";
 ?>
