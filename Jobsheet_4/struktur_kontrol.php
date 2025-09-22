@@ -24,4 +24,28 @@ while ($jarakSaatIni < $jarakTarget) {
 
 echo "<br>";
 echo "Atlet tersebut memerlukan $hari hari untuk mencapai jarak 500 kilometer.";
+echo "<br>";
+
+$jumlahLahan = 10;
+$tanamanPerLahan = 5;
+$buahPerTanaman = 10;
+$jumlahBuah = 0;
+
+for ($i = 1; $i <= $jumlahLahan; $i++) {
+    $jumlahBuah += ($tanamanPerLahan * $buahPerTanaman);
+}
+
+echo "<br>";
+echo "Jumlah buah yang akan dipanen adalah: $jumlahBuah";
+echo "<br>";
+
+$skorUjian = [85, 92, 78, 96, 88];
+$totalSkor = 0;
+
+foreach ($skorUjian as $sor) {
+    $totalSkor += $sor;
+}
+
+echo "<br>";
+echo "Total skor ujian adalah: $totalSkor"; 
 ?>
