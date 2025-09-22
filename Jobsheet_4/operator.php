@@ -4,6 +4,7 @@ $b = 5;
 
 echo "Variabel a: {$a} <br>";
 echo "Variabel b: {$b} <br>";
+echo "<br>";
 
 $hasilTambah = $a + $b;
 $hasilKurang = $a - $b;
@@ -18,6 +19,7 @@ echo "Hasil Kali: {$hasilKali} <br>";
 echo "Hasil Bagi: {$hasilBagi} <br>";
 echo "Sisa Bagi: {$sisaBagi} <br>";
 echo "pangkat: {$pangkat} <br>";
+echo "<br>";
 
 $hasilSama = $a == $b;
 $hasilTidakSama =  $a != $b;
@@ -32,5 +34,15 @@ echo "Hasil Lebih Kecil: {$hasilLebihKecil} <br>";
 echo "Hasil Lebih Besar: {$hasilLebihBesar} <br>";
 echo "Hasil Lebih Kecil Sama: {$hasilLebihKecilSama} <br>";
 echo "Hasil Lebih Besar Sama: {$hasilLebihBesarSama} <br>";
-?>
+echo "<br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "Hasil AND: {$hasilAnd} <br>";
+echo "Hasil OR: {$hasilOr} <br>";
+echo "Hasil NOT A: {$hasilNotA} <br>";
+echo "Hasil NOT B: {$hasilNotB} <br>";
 ?>
